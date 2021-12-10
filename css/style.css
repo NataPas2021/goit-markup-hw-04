@@ -159,7 +159,6 @@ img {
 /*------------Герой-------------------*/
 
 .hero {
-  background: #2f303a;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -201,6 +200,23 @@ img {
   padding-bottom: 0;
 }
 
+.overlay {
+  max-width: 1600px;
+  height: 600px; 
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+    to right,
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)
+      ), 
+    url(../images/hero-image.jpg); 
+  background-size: cover; 
+  background-position: center;
+  background-color: #C4C4C4;
+  
+}
+
 /*------------------Наши преимущества----------------*/
 
 .advantages-title {
@@ -217,6 +233,32 @@ img {
 .item-advantages {
   width: 270px;
   margin-left: 30px;
+}
+
+.item-advantages::before {
+  content:"";
+  height: 120px; 
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+}
+
+.item-advantages:nth-child(1)::before{
+  background-image: url(../images/antenna.svg);
+}
+
+.item-advantages:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.item-advantages:nth-child(3)::before{
+  background-image: url(../images/diagram.svg);
+}
+
+.item-advantages:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .advantages-text {
@@ -423,6 +465,12 @@ img {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+  cursor: pointer;
+}
+
+.item-project:hover,
+.item-project:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-name {
