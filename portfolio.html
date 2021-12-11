@@ -23,12 +23,31 @@
             <li class="item"> <a href="#" class="link active">Портфолио</a></li>
             <li class="item"> <a href="#" class="link">Контакты</a></li>
            </ul>
-            <ul class="contact-info link">
-                <li class="item"> <a href="mailto:info@example.com" class="link mail">info@devstudio.com</a></li>
-                <li class="item"> <a href="tel:+380991111111" class="link telephone">+38 096 111 11 11</a></li>
-               </ul>
-        </nav>
-          
+
+           <ul class="contact-info link">
+            <li class="item"> 
+                <div class="envelope-mail">
+                    <a href="mailto:info@example.com" class="link mail">
+                        <svg class="icon-header" width="16" height="12">
+                            <use  href="./images/icons.svg#icon-envelope" ></use>
+                        </svg>
+                    info@example.com
+                    </a>  
+                </div>  
+            </li>
+
+            <li class="item">
+                <div class="smarthone-tel">
+                    <a href="tel:+380991111111" class="link telephone">
+                        <svg class="icon-header" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </div>
+            </li>
+          </ul>
+        </nav>    
     </div>       
  </header>
          
@@ -175,7 +194,7 @@
     </main>
    
     <footer class="section-footer">
-      <div class="container">
+      <div class="container-footer-address">
           <a href="/index.html" class="logo-footer">
               <span class="logo-first">Web</span><span class="logo-second">Studio</span>
           </a>
@@ -191,6 +210,45 @@
                  </li>    
               </ul>
          </address>  
+     </div>
+     
+     <div class="join-us">
+         <h2 class="joinus-title">присоединяйтесь</h2>
+         <ul>
+             <li class="item-link-social">
+                 <a href="#" aria-label="Instagram">
+                      <svg class="button-icon-social" width="20" height="20">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                 </a>
+             </li>
+
+             <li class="item-link-social">
+                 <a href="#" aria-label="Twitter">
+                      <svg class="button-icon-social" width="20" height="20">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                 </a>
+             </li>
+
+             <li class="item-link-social">
+                 <a href="#" aria-label="Facebook">
+                     <svg class="button-icon-social" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                     </svg>
+                 </a>
+             </li>
+
+             <li class="item-link-social">
+                 <a href="#" aria-label="LinkedIn">
+                     <svg class="button-icon-social" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                     </svg>
+                 </a>
+             </li>
+         </ul>
+            
+       
      </div>
 
   </footer>    
