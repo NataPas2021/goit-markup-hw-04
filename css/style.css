@@ -97,7 +97,7 @@ img {
 /*--------------Header nav + contacts--------------*/
 
 .page-header {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
 
@@ -153,14 +153,17 @@ img {
 
 /*--------icons header---------------*/
 
-.icon-header {
+.icon-envelope,
+.icon-smartphone {
   fill: #757575; 
   margin-right: 10px;
   align-items: center;
 }
 
-.icon-header:hover,
-.icon-header:focus {
+.link.mail:hover .icon-envelope,
+.link.mail:focus .icon-envelope,
+.link.telephone:hover .icon-smartphone,
+.link.telephone:focus .icon-smartphone {
   fill: var(--accent-color)
 }
 
@@ -361,22 +364,24 @@ img {
   margin-bottom: 16px;
 }
 
-.button-icon-social.personal {
-  fill: #AFB1B8;
+
+.button-icon-social-team {
+  fill: #AFB1B8; 
+  display: flex;
+  width: 44px; 
+  height: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
 }
 
-.button-icon-social.personal:hover,
-.button-icon-social.personal:focus {
-  fill: var(--background-color);
+
+.button-icon-social-team:hover .icon-socials {
+  fill: var(--background-color); 
 }
-
-
-.item-link-social.hovered:hover,
-.item-link-social.hovered:focus {
-  background-color: var(--accent-color);
-  fill: var(--background-color);
-}
-
 
 /*---------------------Наши клиенты--------------------*/
 
@@ -400,21 +405,21 @@ img {
  
 }
 
-.button-clients {
+.btn-clients {
+  margin-left: 30px;
+}
+
+.item-clients {
   display: flex;
   width: 170px;
   height: 92px;
-  margin-left: 30px;
-
   justify-content: center;
   align-items: center;
-
   background-color: var(--background-color);
   fill: #AFB1B8;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   cursor: pointer;
- 
 }
 
 .btn-icon-clients {
@@ -426,8 +431,8 @@ img {
 
 }
 
-.button-clients:hover,
-.button-clients:focus {
+.item-clients:hover,
+.item-clients:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -446,6 +451,7 @@ img {
   color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
 
 }
 
@@ -492,29 +498,21 @@ img {
 }
 
 .join-us {
-  margin-right: auto;
-  padding-top: 12px;
+  margin-right: auto; 
   margin-bottom: 20px;
 
-}
-
-.button-icon-social {
-  display: flex;
-  fill: var(--backgr-color-team); 
-
-}
-
-.joinus-title {
-  text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .item-link-social {
   display: inline-block;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.button-icon-social {
+  display: flex;
+  fill: var(--backgr-color-team); 
   width: 44px; 
   height: 44px;
-  margin-left: 10px;
-  padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -522,6 +520,20 @@ img {
   align-items: center;
   cursor: pointer;
 }
+
+.item-link-social:first-child {
+  margin-left: 0;
+}
+
+.joinus-title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+
 
 .item-link-social:first-child {
   margin-left: 0; 
