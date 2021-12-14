@@ -167,6 +167,12 @@ img {
   fill: var(--accent-color)
 }
 
+.link.mail,
+.link.telephone {
+  display: flex;
+  align-items: center;
+}
+
 .envelope-mail {
   justify-content: center;
   align-items: center;
@@ -197,12 +203,12 @@ img {
   font-family: var(--main-font);
   background: var(--accent-color);
   color: var(--background-color);
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.06em;
   padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   align-items: center;
   border: 1px solid transparent;
@@ -211,9 +217,7 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-
+  background: #188CE8;
 }
 
 .section.our-advantages {
