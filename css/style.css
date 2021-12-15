@@ -373,8 +373,8 @@ img {
 
 
 .button-icon-social-team {
-  fill: #AFB1B8; 
   display: flex;
+  fill: #AFB1B8;
   width: 44px; 
   height: 44px;
   border-radius: 50%;
@@ -385,10 +385,16 @@ img {
 
 }
 
+.button-icon-social-team:hover,
+.button-icon-social-team:focus {
+  background-color: var(--accent-color);
+}
+
 
 .button-icon-social-team:hover .icon-socials,
 .button-icon-social-team:focus .icon-socials{
   fill: var(--background-color); 
+  
 }
 
 /*---------------------Наши клиенты--------------------*/
@@ -473,9 +479,6 @@ img {
   color: #fff;
 }
 
-.container-footer-address {
-  padding-left: 215px; 
-}
 
 .address {
   font-style: inherit;
