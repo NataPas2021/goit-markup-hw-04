@@ -529,6 +529,7 @@ img {
   margin-left: 10px;
   border-radius: 50%;
 }
+
 .button-icon-social {
   display: flex;
   fill: var(--backgr-color-team); 
@@ -540,6 +541,11 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.button-icon-social:hover,
+.button-icon-social:focus {
+  background-color: var(--accent-color);
 }
 
 .item-link-social:first-child {
@@ -558,11 +564,6 @@ img {
 
 .item-link-social:first-child {
   margin-left: 0; 
-}
-
-
-.item-link-social:hover {
-  background-color: var(--accent-color);
 }
 
 
